@@ -1,0 +1,27 @@
+Package: openjdk-8-jre
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: jmapviewer
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: openstreetmap-map-icons-classic
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: josm-plugins
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: josm-l10n
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: josm
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: *
+Pin: release n=jessie-backports
+Pin-Priority: 1

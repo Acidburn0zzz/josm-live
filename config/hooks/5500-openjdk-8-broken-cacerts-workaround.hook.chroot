@@ -1,0 +1,8 @@
+#!/bin/sh
+
+## This file contains workaround for bug #775775 in Debian, please see
+## https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=775775
+
+set -e
+
+/var/lib/dpkg/info/ca-certificates-java.postinst configure
