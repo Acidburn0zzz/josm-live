@@ -4,5 +4,5 @@ set -e
 
 lb config noauto \
   --architectures i386 \
-  --archive-areas "main contrib non-free"
-	"${@}"
+  --archive-areas "main contrib non-free" \
+  "${@}"
