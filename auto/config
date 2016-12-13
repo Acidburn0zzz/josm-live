@@ -4,5 +4,7 @@ set -e
 
 lb config noauto \
   --architectures i386 \
+  --mode debian \
+  --distribution jessie \
   --archive-areas "main contrib non-free" \
   "${@}"
