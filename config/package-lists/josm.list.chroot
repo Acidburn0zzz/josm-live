@@ -1,4 +1,6 @@
 openjdk-8-jre
+openjdk-8-jre-headless
+ca-certificates-java
 jmapviewer
 openstreetmap-map-icons-classic
 josm-plugins

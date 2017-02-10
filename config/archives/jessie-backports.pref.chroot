@@ -2,6 +2,14 @@ Package: openjdk-8-jre
 Pin: release n=jessie-backports
 Pin-Priority: 600
 
+Package: openjdk-8-jre-headless
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
+Package: ca-certificates-java
+Pin: release n=jessie-backports
+Pin-Priority: 600
+
 Package: jmapviewer
 Pin: release n=jessie-backports
 Pin-Priority: 600
