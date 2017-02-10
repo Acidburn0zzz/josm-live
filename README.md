@@ -15,5 +15,20 @@ idea of live USB with JOSM preinstalled had born.
   sync` (root needed). !! Change `/dev/sdb` to your USB flash drive !!
 * Boot with your new live USB.
 
+# Making persistent volume
+* Start fdisk by `fdisk /dev/sdb` (root needed).
+* Create new partition by `n`.
+* Primary partition default by pressing [enter] key.
+* Partition number default by pressing [enter] key.
+* First sector default by pressing [enter] key.
+* Last sector default by pressing [enter] key.
+* Save and exit fdisk by `w`.
+* Make filesystem on new partition by `mkfs.ext4 -L persistence /dev/sdb2`.
+* Mount new partition by `mount /dev/sdb2 /mnt`.
+* Create *persistence.conf* file by `touch /mnt/persistence.conf`.
+* Let */home* folder be persistent by `echo "/home" >> /mnt/persistence.conf`.
+* Unmount new partition by `umount /mnt`.
+* Boot with your new live persistent USB.
+
 # Contributing
 This project is built on [Debian Live](https://wiki.debian.org/DebianLive/). For contributing, starting point is [Live Systems Manual](https://debian-live.alioth.debian.org/live-manual/stable/manual/html/live-manual.en.html).

@@ -3,6 +3,7 @@
 set -e
 
 lb config noauto \
+  --bootappend-live "boot=live components persistence" \
   --architectures i386 \
   --mode debian \
   --distribution jessie \
